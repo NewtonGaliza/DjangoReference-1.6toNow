@@ -1,0 +1,4 @@
+$python manage.py syncdb
+Unknown command: 'syncdb'
+
+syncdb command is deprecated in django 1.7. Use the python manage.py migrate
