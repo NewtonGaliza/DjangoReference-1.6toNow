@@ -1,0 +1,29 @@
+Project folders schema
+
+project_folder
+  -core*
+    -static*
+    -templates*
+*created by user
+  
+
+version 1.6
+
+templats>urls.py
+
+from django.conf.urls import patterns, include, url
+
+urlpatterns = patterns('project_folder.core.views',
+    url('^$','home', name='home'),
+    url('^example/', 'example', name='example'),
+)
+
+version 1.11:
+
+from django.conf.urls import include, url
+from project_folder.core import views
+
+urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^example/$', views.example, name='example'),
+)
