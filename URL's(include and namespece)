@@ -9,7 +9,7 @@ project_folder
 
 version 1.6
 
-templats>urls.py
+template>urls.py
 
 from django.conf.urls import patterns, include, url
 
